@@ -1,1 +1,3 @@
-# Test
+---
+permalink: /game/WebGL-Test.html
+---
