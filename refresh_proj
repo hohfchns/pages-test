@@ -1,0 +1,12 @@
+#!/bin/bash
+
+find . -name "*WebGL-Test*" -print0 | xargs -0 rm
+cp -r ~/Dev/Godot4/WebGL-Test/build/* ~/Dev/Pages/test/
+mv WebGL-Test.html index.html
+
+
+if [ "$1" == "serve" ]
+then
+  bundle exec jekyll serve
+fi
+
